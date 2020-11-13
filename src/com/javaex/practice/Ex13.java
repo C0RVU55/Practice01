@@ -5,17 +5,18 @@ import java.util.Scanner;
 public class Ex13 {
 
 	public static void main(String[] args) {
-		//문제130000000000000
+		//문제13
+		
+		//달러=원화/환율
 		
 		Scanner sc=new Scanner(System.in);
 		
+		final double one$=1230.95;
 		
 		System.out.print("환전할 원화를 입력하세요: ");
+		int won=sc.nextInt();
 		
-		final double one=1230.95;
-		double won=sc.nextDouble();
-		
-		double dollar=won*one;
+		double dollar=(double)won/one$;
 		
 		System.out.println("받으실 달러는 "+dollar);
 		
